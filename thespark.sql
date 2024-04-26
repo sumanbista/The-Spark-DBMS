@@ -1,6 +1,6 @@
-/* CREATE Student Table */
+/* CREATE Student1 Table */
 
-CREATE TABLE Student 
+CREATE TABLE Student1 
 (
     stuID integer,
     stuName varchar(40),
@@ -10,24 +10,127 @@ CREATE TABLE Student
     constraint student_id_pk primary key (stuID)
 );
 
-insert into Student 
+insert into Student1 
 values (1, 'Alex Zender', '#12ad3qwqreg', '120 Bloomfield Ave, Caldwell, NJ', 9876543210); 
 
-insert into Student 
+insert into Student1 
 values (2, 'Brat Chan', '234#adahjasd', '120 Passaic Ave, Paterson, NJ', 9876543210); 
 
-insert into Student 
+insert into Student1 
 values (3, 'Alice Johnson', '#1a2b3c4d', '123 Elm St, Springfield, IL', 1234567890);
 
-insert into Student 
+insert into Student1 
 values (4, 'John Smith', 'qwerty123', '456 Oak St, Boston, MA', 2345678901);
 
-insert into Student 
+insert into Student1 
 values (5, 'Emily Davis', 'password123', '789 Maple St, San Francisco, CA', 3456789012);
+
+/* CREATE Student2 Table */
+CREATE TABLE Student2 
+(
+    stuID integer,
+    stuName varchar(40),
+    stuPassword varchar(250),
+    stuAddress varchar(100),
+    cellNumber integer,
+    constraint student_id_pk primary key (stuID)
+);
+
+insert into Student2 
+values (113, 'Alex Junior', 'qreg#12ad3qw', '1120 Passaic Ave, Caldwell, NJ', 9876547890); 
+
+insert into Student2 
+values (234, 'Liam Chen', '2hjasd34#ada', '78 Bloomfield Ave, Paterson, NJ', 9876543210); 
+
+insert into Student2 
+values (316, 'Peter Khadka', '4d#1a2b3c', '23 Elm St, Springfield, IL', 1234568901);
+
+insert into Student2 
+values (423, 'Mason Chan', 'passwordqwerty123', '156 Oak St, Boston, MA', 2345672210);
+
+insert into Student2 
+values (592, 'Olivia Brown', '#1a2password123', '189 Maple St, San Francisco, CA', 3456789012);
+
+/* CREATE Student3 Table */
+CREATE TABLE Student3 
+(
+    stuID integer,
+    stuName varchar(40),
+    stuPassword varchar(250),
+    stuAddress varchar(100),
+    cellNumber integer,
+    constraint student_id_pk primary key (stuID)
+);
+
+insert into Student3 
+values (741, 'Ethan Lee', 'newpassword123', '3456 Main St, New York, NY', 1112223333);
+
+insert into Student3 
+values (852, 'Liam Kim', 'qwertyuiop', '9876 Park Ave, Chicago, IL', 4445556666);
+
+insert into Student3 
+values (316, 'Peter Khadka', 'newuser123', '1234 Broadway, Los Angeles, CA', 7778889999);
+
+insert into Student3 
+values (174, 'Sophia Hall', 'password1234', '5678 Oak St, Houston, TX', 2223334444);
+
+insert into Student3 
+values (285, 'Logan Davis', 'newpass123', '9012 Maple St, Phoenix, AZ', 6667778888);
+
+/* CREATE Student4 Table */
+CREATE TABLE Student4 
+(
+    stuID integer,
+    stuName varchar(40),
+    stuPassword varchar(250),
+    stuAddress varchar(100),
+    cellNumber integer,
+    constraint student_id_pk primary key (stuID)
+);
+
+insert into Student4 
+values (945, 'Alexander White', 'newpassword456', '6789 Fifth Ave, New York, NY', 9991112222);
+
+insert into Student4 
+values (753, 'Julia Martin', 'qwertyasdfg', '2345 Grand St, San Antonio, TX', 6667778888);
+
+insert into Student4 
+values (421, 'Daniel Patel', 'newuser789', '4567 Oak St, Las Vegas, NV', 3334445555);
+
+insert into Student4 
+values (198, 'Sophia Hall', 'password5678', '8901 Main St, New York, NY', 7778889999);
+
+insert into Student4 
+values (362, 'Gabriel Lewis', 'newpass234', '1234 Broadway, Portland, OR', 4445556666);
+
+/* CREATE Student5 Table */
+CREATE TABLE Student5 
+(
+    stuID integer,
+    stuName varchar(40),
+    stuPassword varchar(250),
+    stuAddress varchar(100),
+    cellNumber integer,
+    constraint student_id_pk primary key (stuID)
+);
+insert into Student5 
+values (112, 'Elijah Davis', 'password123', '123 Main St, Chicago, IL', 5556667777);
+
+insert into Student5 
+values (943, 'Ava Morales', 'newuser123', '456 Elm St, Caldwell, NJ', 2223334444);
+
+insert into Student5 
+values (751, 'Liam Chen', 'qwertyuiop', '789 Oak St, Phoenix, AZ', 8889991111);
+
+insert into Student5 
+values (319, 'Emily Patel', 'newpassword123', '901 Maple St, San Francisco, CA', 6667778888);
+
+insert into Student5 
+values (482, 'Oliver Brown', 'newpass123', '2345 Park Ave, Los Angeles, CA', 3334445555);
 
 
 /* Creating Instructor Table */
-CREATE TABLE Instructor
+CREATE TABLE Instructor1
 (
    instructorID integer,
    instructorName varchar(40),
@@ -37,22 +140,22 @@ CREATE TABLE Instructor
    constraint instructor_instructorID_pk primary key(instructorID)
 );
 
-insert into Instructor
+insert into Instructor1
 values (1, 'John Mill', 'Masters in Mathematics', '121 Bloomfield Ave, Newark, NJ', 'Mathematics');
 
-insert into Instructor
+insert into Instructor1
 values (2, 'Joanna Gaines', 'Masters in Biology', '12 St. James Place, Montclair, NJ', 'Biology');
 
 
-insert into Instructor
+insert into Instructor1
 values (3, 'William Sanchez', 'Masters in Physics', '99 Martin Ave, Caldwell, NJ', 'Physics');
 
 
-insert into Instructor
+insert into Instructor1
 values (4, 'Brianna Levine', 'Bachelor in Computer Information Systems', '89 1st Street, Roseville, NJ', 'Computer Science');
 
 
-insert into Instructor
+insert into Instructor1
 values (5, 'Pricsilla Monroe', 'PHD in History', '120 Bloomfield Ave, Caldwell, NJ', 'History');
 
 
