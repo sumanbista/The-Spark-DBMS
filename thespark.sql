@@ -186,9 +186,9 @@ insert into Courses
 values (5, 'Psychology 201', 'Intermediate level psychology course', 'Intermediate', 'Joanna Gaines');
 
 
-/* CREATE Assessment Table  */
+/* CREATE Assessment1 Table  */
 
-CREATE TABLE Assessment (
+CREATE TABLE Assessment1 (
  assessmentID integer,
  courseID integer,
  title varchar(255),
@@ -199,21 +199,133 @@ CREATE TABLE Assessment (
  constraint courseID_fk foreign key (courseID) references Courses(courseID)
 );
 
-insert into  Assessment 
+insert into  Assessment1 
 values (1001, 1, 'Quiz' , 60, TO_DATE('2024/05/20', 'yyyy/mm/dd'), '00:60:00');
 
 insert into  Assessment
 values  (1002, 2, 'Mid-Term',60,TO_DATE('2024/05/20', 'yyyy/mm/dd'),'00:60:00');
 
-insert into  Assessment 
+insert into  Assessment1 
 values (1003, 3, 'Quiz Basics' , 60, TO_DATE('2024/05/20', 'yyyy/mm/dd'), '00:60:00');
 
-insert into  Assessment
+insert into  Assessment1
 values  (1004, 4, 'Mid-Term Basics',60,TO_DATE('2024/05/20', 'yyyy/mm/dd'),'00:60:00');
 
-insert into  Assessment
+insert into  Assessment1
 values (1005, 5, 'Quiz' , 60, TO_DATE('2024/05/20', 'yyyy/mm/dd'), '00:60:00');
 
+/* CREATE Assessment2 Table  */
+
+CREATE TABLE Assessment2 (
+ assessmentID integer,
+ courseID integer,
+ title varchar(255),
+ passingScore integer,
+ dueDate Date,
+ assessmentTime varchar(255),
+ constraint assessment_assessmentID_pk primary key(assessmentID),
+ constraint courseID_fk foreign key (courseID) references Courses(courseID)
+);
+
+insert into Assessment2 
+values (2001, 1, 'Final Exam', 70, TO_DATE('2024/06/15', 'yyyy/mm/dd'), '01:30:00');
+
+insert into Assessment2 
+values (2002, 2, 'Project Submission', 60, TO_DATE('2024/06/10', 'yyyy/mm/dd'), '02:00:00');
+
+insert into Assessment2 
+values (2003, 3, 'Lab Test', 70, TO_DATE('2024/06/05', 'yyyy/mm/dd'), '01:00:00');
+
+insert into Assessment2 
+values (2004, 4, 'Research Paper', 60, TO_DATE('2024/06/12', 'yyyy/mm/dd'), '02:30:00');
+
+insert into Assessment2 
+values (2005, 5, 'Group Presentation', 70, TO_DATE('2024/06/08', 'yyyy/mm/dd'), '01:15:00');
+
+
+/* CREATE Assessment3 Table  */
+
+CREATE TABLE Assessment3 (
+ assessmentID integer,
+ courseID integer,
+ title varchar(255),
+ passingScore integer,
+ dueDate Date,
+ assessmentTime varchar(255),
+ constraint assessment_assessmentID_pk primary key(assessmentID),
+ constraint courseID_fk foreign key (courseID) references Courses(courseID)
+);
+
+insert into Assessment3 
+values (3001, 1, 'Assignment 1', 40, TO_DATE('2024/07/01', 'yyyy/mm/dd'), '00:30:00');
+
+insert into Assessment3 
+values (3002, 2, 'Mid-Term Exam', 50, TO_DATE('2024/07/15', 'yyyy/mm/dd'), '01:00:00');
+
+insert into Assessment3 
+values (3003, 3, 'Lab Assignment', 60, TO_DATE('2024/07/08', 'yyyy/mm/dd'), '00:45:00');
+
+insert into Assessment3 
+values (3004, 4, 'Research Assignment', 70, TO_DATE('2024/07/22', 'yyyy/mm/dd'), '01:15:00');
+
+insert into Assessment3 
+values (3005, 5, 'Final Project', 60, TO_DATE('2024/07/29', 'yyyy/mm/dd'), '02:00:00');
+
+/* CREATE Assessment4 Table  */
+
+CREATE TABLE Assessment4 (
+ assessmentID integer,
+ courseID integer,
+ title varchar(255),
+ passingScore integer,
+ dueDate Date,
+ assessmentTime varchar(255),
+ constraint assessment_assessmentID_pk primary key(assessmentID),
+ constraint courseID_fk foreign key (courseID) references Courses(courseID)
+);
+
+insert into Assessment4 
+values (4001, 1, 'Quiz 1', 30, TO_DATE('2024/08/05', 'yyyy/mm/dd'), '00:20:00');
+
+insert into Assessment4 
+values (4002, 2, 'Group Discussion', 40, TO_DATE('2024/08/12', 'yyyy/mm/dd'), '00:40:00');
+
+insert into Assessment4 
+values (4003, 3, 'Lab Test 2', 50, TO_DATE('2024/08/19', 'yyyy/mm/dd'), '01:00:00');
+
+insert into Assessment4 
+values (4004, 4, 'Research Paper 2', 60, TO_DATE('2024/08/26', 'yyyy/mm/dd'), '02:00:00');
+
+insert into Assessment4 
+values (4005, 5, 'Final Exam 2', 70, TO_DATE('2024/09/02', 'yyyy/mm/dd'), '02:30:00');
+
+/* CREATE Assessment3 Table  */
+
+CREATE TABLE Assessment5 (
+ assessmentID integer,
+ courseID integer,
+ title varchar(255),
+ passingScore integer,
+ dueDate Date,
+ assessmentTime varchar(255),
+ constraint assessment_assessmentID_pk primary key(assessmentID),
+ constraint courseID_fk foreign key (courseID) references Courses(courseID)
+);
+
+insert into Assessment5 
+values (5001, 1, 'Assignment 3', 40, TO_DATE('2024/09/10', 'yyyy/mm/dd'), '00:30:00');
+
+insert into Assessment5 
+values (5002, 2, 'Mid-Term 2', 60, TO_DATE('2024/09/17', 'yyyy/mm/dd'), '01:00:00');
+
+insert into Assessment5 
+values (5003, 3, 'Lab Assignment 2', 40, TO_DATE('2024/09/12', 'yyyy/mm/dd'), '00:40:00');
+
+insert into Assessment5 
+values (5004, 4, 'Research Project', 75, TO_DATE('2024/09/24', 'yyyy/mm/dd'), '01:15:00');
+
+insert into Assessment5 
+values (5005, 5, 'Final Assessment', 60, TO_DATE('2024/10/01', 'yyyy/mm/dd'), '02:00:00');
 
 /* Creating Payment Table */
 CREATE TABLE Invoice
